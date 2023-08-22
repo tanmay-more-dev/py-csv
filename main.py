@@ -5,7 +5,7 @@ CSV_FILE = "contact_data.csv"
 
 def display_data():
     print("--------------------")
-    print(pd.read_csv(CSV_FILE))
+    print(pd.read_csv(CSV_FILE, index_col = [0]))
     print("--------------------")
 
 def add_data():
